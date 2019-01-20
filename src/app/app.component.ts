@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Alert } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  compMotto = 'Your Homestay Partner';
+
+  clickHandler() {
+    alert("I'm clicked");
+  }
 }
